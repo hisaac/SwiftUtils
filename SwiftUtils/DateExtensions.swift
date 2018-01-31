@@ -14,19 +14,19 @@ extension Date {
 	}
 
 	/**
-		Returns the last second of the day
-	*/
+	 Returns the last second of the day
+	 */
 	var endOfDay: Date {
 		/// There are 86400 seconds in a day, so if we add one less than that to `startOfDay`, we get the end of the day
 		return startOfDay.addingTimeInterval(86399)
 	}
 
 	func secondsFrom(_ date: Date) -> Int {
-		return self.interval(ofComponent: .second, fromDate: date)
+		return interval(ofComponent: .second, fromDate: date)
 	}
 
 	func minutesFrom(_ date: Date) -> Int {
-		return self.interval(ofComponent: .minute, fromDate: date)
+		return interval(ofComponent: .minute, fromDate: date)
 	}
 
 	func interval(ofComponent component: Calendar.Component, fromDate date: Date) -> Int {
