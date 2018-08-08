@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [1.0.2] - 2018-08-08
+
+### Changed
+
+- Change all properties and methods to `public` so that this library actually works.
+
 ## [1.0.1] - 2018-08-08
 
 ### Changed

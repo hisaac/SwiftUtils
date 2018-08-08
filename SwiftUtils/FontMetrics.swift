@@ -14,7 +14,7 @@ struct FontMetrics {
 	/// default Large setting, `scaler` will be `1.0`. Only used when `UIFontMetrics` is not
 	/// available.
 	///
-	static var scaler: CGFloat {
+	public static var scaler: CGFloat {
 		return UIFont.preferredFont(forTextStyle: .body).pointSize / 17.0
 	}
 
@@ -23,7 +23,7 @@ struct FontMetrics {
 	/// - Parameter font: A font at its default point size.
 	/// - Returns: The font at its scaled point size.
 	///
-	static func scaledFont(for font: UIFont) -> UIFont {
+	public static func scaledFont(for font: UIFont) -> UIFont {
 		if #available(iOS 11.0, *) {
 			return UIFontMetrics.default.scaledFont(for: font)
 		} else {
@@ -39,7 +39,7 @@ struct FontMetrics {
 	///   - maximumPointSize: The maximum point size to scale up to.
 	/// - Returns: The font at its constrained scaled point size.
 	///
-	static func scaledFont(for font: UIFont, maximumPointSize: CGFloat) -> UIFont {
+	public static func scaledFont(for font: UIFont, maximumPointSize: CGFloat) -> UIFont {
 		if #available(iOS 11.0, *) {
 			return UIFontMetrics.default.scaledFont(for: font,
 													maximumPointSize: maximumPointSize,
@@ -54,7 +54,7 @@ struct FontMetrics {
 	/// - Parameter value: A default size value.
 	/// - Returns: The value scaled based on current Dynamic Type settings.
 	///
-	static func scaledValue(for value: CGFloat) -> CGFloat {
+	public static func scaledValue(for value: CGFloat) -> CGFloat {
 		if #available(iOS 11.0, *) {
 			return UIFontMetrics.default.scaledValue(for: value)
 		} else {

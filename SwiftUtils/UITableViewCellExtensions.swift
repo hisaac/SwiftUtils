@@ -3,7 +3,7 @@
 import UIKit
 
 extension UITableViewCell {
-	var hasDetailText: Bool {
+	public var hasDetailText: Bool {
 		if let detailText = detailTextLabel?.text {
 			return detailText.isEmpty.opposite
 		} else {

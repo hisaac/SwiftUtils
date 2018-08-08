@@ -4,9 +4,9 @@ import UIKit
 
 class LocalizedIndexedCollationWithFavorites: UILocalizedIndexedCollation {
 
-	let collation = UILocalizedIndexedCollation.current()
+	private let collation = UILocalizedIndexedCollation.current()
 
-	override var sectionTitles: [String] {
+	public override var sectionTitles: [String] {
 		var sectionTitles = collation.sectionTitles
 
 		let localizedRecentContactsSectionTitle = NSLocalizedString(
@@ -18,13 +18,13 @@ class LocalizedIndexedCollationWithFavorites: UILocalizedIndexedCollation {
 		return sectionTitles
 	}
 
-	override var sectionIndexTitles: [String] {
+	public override var sectionIndexTitles: [String] {
 		var sectionIndexTitles = collation.sectionIndexTitles
 		sectionIndexTitles.insert("★", at: 0)
 		return sectionIndexTitles
 	}
 
-	override func section(for object: Any, collationStringSelector selector: Selector) -> Int {
+	public override func section(for object: Any, collationStringSelector selector: Selector) -> Int {
 		return collation.section(for: object, collationStringSelector: selector) + 1
 	}
 

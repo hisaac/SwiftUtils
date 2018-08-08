@@ -3,7 +3,7 @@
 import UIKit
 
 extension UIViewController {
-	func embedInNavigationController(prefersLargeTitles: Bool = true) -> UINavigationController {
+	public func embedInNavigationController(prefersLargeTitles: Bool = true) -> UINavigationController {
 		let navigationController = UINavigationController()
 
 		if prefersLargeTitles, #available(iOS 11.0, *) {
