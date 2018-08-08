@@ -1,9 +1,6 @@
-//
-// Created by Isaac Halvorson on 1/31/18.
-// Copyright (c) 2018 Levelsoft. All rights reserved.
-//
+// Created by Isaac Halvorson on 1/31/18
 
-class StringUtils {
+struct StringUtils {
 	static func stringIsEmptyOrNil(_ string: String?) -> Bool {
 		return (string ?? "").isEmpty
 	}

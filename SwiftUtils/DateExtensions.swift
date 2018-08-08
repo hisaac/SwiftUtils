@@ -1,7 +1,4 @@
-//
-// Created by Isaac Halvorson on 1/31/18.
-// Copyright (c) 2018 Levelsoft. All rights reserved.
-//
+// Created by Isaac Halvorson on 1/31/18
 
 import Foundation
 
@@ -18,7 +15,7 @@ extension Date {
 	 */
 	var endOfDay: Date {
 		/// There are 86400 seconds in a day, so if we add one less than that to `startOfDay`, we get the end of the day
-		return startOfDay.addingTimeInterval(86399)
+		return startOfDay.addingTimeInterval(86_399)
 	}
 
 	func secondsFrom(_ date: Date) -> Int {

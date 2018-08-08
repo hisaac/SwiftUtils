@@ -1,9 +1,8 @@
-## OS X Finder
-.DS_Store
+# Xcode
 
 ## Build generated
 build/
-DerivedData
+DerivedData/
 
 ## Various settings
 *.pbxuser
@@ -14,20 +13,31 @@ DerivedData
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
-
-## Other
-*.xccheckout
-*.moved-aside
-*.xcuserstate
-*.xcscmblueprint
+xcuserdata/
+.idea/
 
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
+*.dSYM.zip
+*.dSYM
 
-# Swift Package Manager
-.build/
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
 
-# Carthage
-Carthage/Build
+## Carthage
+Carthage/
+
+## fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.mobileprovision
+*.DS_Store
