@@ -57,6 +57,7 @@
 		4AA660AF211B3A0800E47AEF /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		4AA660B2211B3B2F00E47AEF /* LocalizedIndexedCollationWithFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedIndexedCollationWithFavorites.swift; sourceTree = "<group>"; };
 		4AA660B4211B3B4900E47AEF /* FontMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontMetrics.swift; sourceTree = "<group>"; };
+		4AA660B6211B3BDD00E47AEF /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		B775629E66493205FB2710A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B775684760F09352B6ABC414 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		B775698181FC1092A4436864 /* ComparableExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComparableExtensions.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B775629E66493205FB2710A2 /* README.md */,
+				4AA660B6211B3BDD00E47AEF /* CHANGELOG.md */,
 				B7756DAF280FF6627DC35A04 /* LICENSE */,
 				4AA6609C211B370C00E47AEF /* .swiftlint.yml */,
 				B775684760F09352B6ABC414 /* .gitignore */,
