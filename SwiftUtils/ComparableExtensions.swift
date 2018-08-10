@@ -23,8 +23,8 @@ extension Comparable {
 	}
 
 	public func isEqualToOneOfThese(_ args: Self...) -> Bool {
-		for arg in args {
-			if arg == self { return true }
+		for arg in args where arg == self {
+			return true
 		}
 		return false
 	}

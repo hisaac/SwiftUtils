@@ -30,4 +30,19 @@ extension String {
 			isValidPhoneNumber
 	}
 
+	/// Returns true if the string contains only whitespace and/or new lines
+	var isWhiteSpace: Bool {
+		return trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+	}
+
+	/// Returns false if the string contains only whitespace and/or new lines
+	var isNotWhiteSpace: Bool {
+		return !isWhiteSpace
+	}
+
+	/// Returns self if self is not empty and is not whitespace, otherwise returns nil
+	var nilIfEmptyOrWhitespace: String? {
+		return isNotEmpty && isNotWhiteSpace ? self : nil
+	}
+
 }
